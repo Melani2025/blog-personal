@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Web Personal</title>
+</head>
+<body>
+  <!-- Encabezado con nombre, lema y avatar -->
+  <header>
+    <h1>Juan Pérez</h1>
+    <p>Desarrollador Web Apasionado por la Tecnología</p>
+    <img src="avatar.jpg" alt="Foto de Juan Pérez" width="150">
+  </header>
+
+  <!-- Menú de navegación con enlaces internos -->
+  <nav>
+    <ul>
+      <li><a href="#sobremi">Sobre mí</a></li>
+      <li><a href="#intereses">Intereses</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Soy un <strong>desarrollador web</strong> con intereses en <em>tecnología</em>, <mark>inteligencia artificial</mark> y diseño web. Me encanta crear proyectos que impacten positivamente en la sociedad.</p>
+  </section>
+
+  <!-- Lista de intereses -->
+  <section id="intereses">
+    <h2>Mis intereses</h2>
+    <ul>
+      <li>Programación</li>
+      <li>Diseño gráfico</li>
+      <li>Lectura</li>
+      <li>Viajar</li>
+    </ul>
+  </section>
+
+  <!-- Tabla de habilidades -->
+  <section id="habilidades">
+    <h2>Tabla de habilidades</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Habilidad</th>
+          <th>Nivel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Avanzado</td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Básico</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Siempre aprendiendo nuevas tecnologías</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <!-- Sección Multimedia -->
+  <section id="multimedia">
+    <h2>Presentación Personal</h2>
+    <video controls width="320">
+      <source src="presentacion.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section id="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required><br>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="10" max="99" required><br>
+
+      <label>Género:</label>
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="femenino" name="genero" value="femenino" required>
+      <label for="femenino">Femenino</label><br>
+
+      <label for="intereses">Intereses:</label>
+      <select id="intereses" name="intereses" required>
+        <option value="">Selecciona uno</option>
+        <option value="web">Desarrollo Web</option>
+        <option value="ia">Inteligencia Artificial</option>
+        <option value="diseño">Diseño</option>
+      </select><br>
+
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="40" required></textarea><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Juan Pérez. Todos los derechos reservados.</p>
+    <p>Sígueme en:
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://github.com">GitHub</a> |
+      <a href="https://linkedin.com">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
